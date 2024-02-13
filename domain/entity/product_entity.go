@@ -106,8 +106,8 @@ func (e *Product) GetImageUrl() string {
 	return e.imageUrl
 }
 
-func (e *Product) GetSku() valueobject.SKU {
-	return e.sku
+func (e *Product) GetSku() string {
+	return e.sku.GetValue()
 }
 
 func (e *Product) GetQuantity() float64 {
